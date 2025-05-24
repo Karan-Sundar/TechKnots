@@ -6,7 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/clerk-react";
 
-import IntroVideo from "@/components/Introvideo";
+// import IntroVideo from "@/components/Introvideo";
 import Index from "@/pages/Index";
 import NotFound from "@/pages/NotFound";
 import Blog from "@/pages/Blog";
