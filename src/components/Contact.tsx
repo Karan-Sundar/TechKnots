@@ -138,8 +138,8 @@ const Contact = () => {
     { 
       icon: <Mail className="h-5 w-5" />, 
       title: "Email", 
-      value: "info@techknots.com",
-      link: "mailto:info@techknots.com"
+      value: "info@techknots.org",
+      link: "mailto:info@techknots.org"
     },
     { 
       icon: <Phone className="h-5 w-5" />, 
@@ -151,7 +151,7 @@ const Contact = () => {
       icon: <MapPin className="h-5 w-5" />, 
       title: "Location", 
       value: "Chennai, Tamil Nadu, India",
-      link: "https://maps.google.com/?q=Chennai,Tamil+Nadu,India"
+      link: "https://maps.app.goo.gl/GPXzqDZdDugaWe1S8"
     }
   ];
 
