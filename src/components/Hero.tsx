@@ -9,21 +9,19 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 const backgroundImages = [
-  'header.jpg',
-  'header2.jpg',
-  'header3.jpg',
-  'header4.jpg',
-  'header5.jpg',
+  'home-bg1.jpg',
+  'home-bg2.jpg',
+  'automation-bg.jpg',
+  'iot-devices.jpg',
+  'smart-living.jpg',
 ];
 
 const sideCarouselImages = [
-  'header.jpg',
-  'det1.jpg',
-  'det2.jpg',
-  'det3.jpg',
-  'det4.jpg',
-  'det5.jpg'
-
+  'product1.jpg',
+  'product2.jpg',
+  'product3.jpg',
+  'product4.jpg',
+  'product5.jpg'
 ];
 
 const Hero = () => {
@@ -49,10 +47,10 @@ const Hero = () => {
         ))}
       </Swiper>
 
-      {/* Optional White Overlay for Clarity */}
+      {/* Optional Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-white/70 to-white/40 backdrop-blur-2xl z-10" />
 
-      {/* Decorative Blur Circles */}
+      {/* Decorative Circles */}
       <div className="absolute inset-0 z-20 overflow-hidden">
         <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-techknot-blue/10 blur-3xl"></div>
         <div className="absolute bottom-20 left-10 w-72 h-72 rounded-full bg-techknot-purple/10 blur-3xl"></div>
@@ -68,9 +66,10 @@ const Hero = () => {
               <span className="text-gradient-tech block">
                 <Typewriter
                   words={[
-                    'Tying the knot between theory and practice',
-                    'Empowering engineers with real-world skills',
-                    'Building the bridge between knowledge and experience'
+                    'Innovating Smart Living Solutions',
+                    'Pioneering Smart Home Automation',
+                    'Connecting Homes to the Future',
+                    'IoT-Powered Product Innovation'
                   ]}
                   loop
                   cursor
@@ -83,35 +82,35 @@ const Hero = () => {
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 max-w-xl mx-auto lg:mx-0">
-              TechKnots provides hands-on engineering training from beginner to advanced levels, empowering students with real-world skills and industry expertise.
+              At TechKnots, we design cutting-edge smart home products and IoT solutions that enhance comfort, security, and efficiency — bringing the future of automation to your doorstep.
             </p>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
               <Button size="lg" className="bg-gradient-tech hover:opacity-90 transition-opacity shadow-md">
-                Explore Programs <ArrowRight size={16} className="ml-2" />
+                Explore Products <ArrowRight size={16} className="ml-2" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-techknot-blue text-techknot-blue hover:bg-techknot-blue/10 shadow-md"
               >
-                Contact Us
+                Get a Demo
               </Button>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start gap-4 pt-4">
               <div className="flex -space-x-3">
-                <div className="w-9 h-9 rounded-full bg-techknot-blue flex items-center justify-center text-white text-xs">4+</div>
-                <div className="w-9 h-9 rounded-full bg-techknot-purple flex items-center justify-center text-white text-xs">U</div>
-                <div className="w-9 h-9 rounded-full bg-techknot-lightblue flex items-center justify-center text-white text-xs">I</div>
+                <div className="w-9 h-9 rounded-full bg-techknot-blue flex items-center justify-center text-white text-xs">AI</div>
+                <div className="w-9 h-9 rounded-full bg-techknot-purple flex items-center justify-center text-white text-xs">IoT</div>
+                <div className="w-9 h-9 rounded-full bg-techknot-lightblue flex items-center justify-center text-white text-xs">5G</div>
               </div>
               <p className="text-sm text-gray-600">
-                <span className="font-semibold">4+ years</span> of expertise with universities & IEEE
+                <span className="font-semibold">Future-Ready</span> tech built for smart automation
               </p>
             </div>
           </div>
 
-          {/* Side Image Carousel */}
+          {/* Side Product Image Carousel */}
           <div className="lg:w-1/2 w-full animate-fade-right flex justify-center">
             <Swiper
               modules={[Autoplay]}
@@ -123,7 +122,7 @@ const Hero = () => {
                 <SwiperSlide key={i}>
                   <img
                     src={src}
-                    alt={`Detail Slide ${i + 1}`}
+                    alt={`Product Slide ${i + 1}`}
                     className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] object-cover rounded-xl"
                   />
                 </SwiperSlide>
