@@ -9,25 +9,30 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 const backgroundImages = [
-  'home-bg1.jpg',
-  'home-bg2.jpg',
-  'automation-bg.jpg',
-  'iot-devices.jpg',
-  'smart-living.jpg',
+  'smart-switch.jpg',
+  'iot-dashboard.jpg',
+  'home-cam.jpg',
+  'smart-home.jpg',
+  'energy-control.jpg',
 ];
 
 const sideCarouselImages = [
-  'product1.jpg',
-  'product2.jpg',
-  'product3.jpg',
-  'product4.jpg',
-  'product5.jpg'
+  'smart-switch.jpg',
+  'iot-dashboard.jpg',
+  'home-cam.jpg',
+  'smart-home.jpg',
+  'energy-control.jpg',
+];
+
+const productCategories = [
+  'Smart Switches',
+  'Energy Optimizers',
+  'AI Devices',
 ];
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center pt-16 overflow-hidden">
       {/* Background Carousel */}
       <Swiper
         modules={[Autoplay, EffectFade]}
@@ -47,7 +52,7 @@ const Hero = () => {
         ))}
       </Swiper>
 
-      {/* Optional Overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-white/70 to-white/40 backdrop-blur-2xl z-10" />
 
       {/* Decorative Circles */}
@@ -108,9 +113,21 @@ const Hero = () => {
                 <span className="font-semibold">Future-Ready</span> tech built for smart automation
               </p>
             </div>
+
+            {/* Product Categories */}
+            <div className="pt-6 flex flex-wrap justify-center lg:justify-start gap-3">
+              {productCategories.map((cat, idx) => (
+                <span
+                  key={idx}
+                  className="px-4 py-2 text-sm bg-techknot-lightblue/20 text-techknot-blue rounded-full font-medium"
+                >
+                  {cat}
+                </span>
+              ))}
+            </div>
           </div>
 
-          {/* Side Product Image Carousel */}
+          {/* Side Product Carousel */}
           <div className="lg:w-1/2 w-full animate-fade-right flex justify-center">
             <Swiper
               modules={[Autoplay]}
@@ -129,7 +146,16 @@ const Hero = () => {
               ))}
             </Swiper>
           </div>
+        </div>
 
+        {/* Live Demo CTA & Chatbot Button */}
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-4 text-center z-30">
+          <Button className="bg-gradient-tech px-6 py-3 text-lg font-semibold shadow-lg hover:opacity-90">
+            Watch Live Product Demo
+          </Button>
+          <Button className="bg-white text-techknot-blue border border-techknot-blue px-6 py-3 shadow-md hover:bg-techknot-blue/10">
+            Talk to an Automation Expert
+          </Button>
         </div>
       </div>
     </section>
